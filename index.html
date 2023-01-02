@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it" >
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap" rel="stylesheet">
+
+    <script src="script.js"></script>
+
+    <title>Calcolatrice Online</title>
+    <link rel="shortcut icon" href="favicon.png">
+  </head>
+  <body >
+
+    <center>
+
+    <h1 style="font-family:'Bebas Neue'; font-size:50px;">Calcolatrice Online</h1>
+
+    <form name="calcolatrice">
+
+
+      <input name="schermo" disabled id="monitor">
+
+      <table  >
+
+          <tr>
+
+            <td><input type="button" value="CE" onclick="cancella()"  class="btn" style="background-color:#8ab4f8"/></td>
+            <td><input type="button"value="R" onclick="reset()" class="btn"/></td>
+            <td><input type="button"  value="+" onclick="stampaAschermo('+')"  class="btn"></td>
+            <td><input type="button"  value="/" onclick="stampaAschermo('/')"  class="btn"></td>
+
+          </tr>
+
+          <tr>
+
+            <td><input type="button" value="7" onclick="stampaAschermo('7')" class="btn"></td>
+            <td><input type="button" value="8" onclick="stampaAschermo('8')"  class="btn"></td>
+            <td><input type="button" value="9" onclick="stampaAschermo('9')"  class="btn"></td>
+            <td><input type="button" value="-" onclick="stampaAschermo('-')"  class="btn"></td>
+          </tr>
+
+          <tr>
+
+            <td><input type="button" value="4" onclick="stampaAschermo('4')"  class="btn"></td>
+            <td><input type="button" value="5" onclick="stampaAschermo('5')"  class="btn"></td>
+            <td><input type="button" value="6" onclick="stampaAschermo('6')"  class="btn"></td>
+            <td><input type="button" value="x" onclick="stampaAschermo('*')"  class="btn"></td>
+          </tr>
+
+          <tr>
+            <td><input type="button"  value=" 1" onclick="stampaAschermo('1')"  class="btn"></td>
+            <td><input type="button"  value=" 2" onclick="stampaAschermo('2')"  class="btn"></td>
+            <td><input type="button" value=" 3" onclick="stampaAschermo('3')"  class="btn"></td>
+            <td><input type="button"  value=" =" onclick="calcola()"  class="btn"></td>
+          </tr>
+
+
+      </table>
+
+
+    </form>
+
+
+
+    </center>
+
+  </body>
+</html>
