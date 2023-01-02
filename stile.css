@@ -30,7 +30,17 @@ body{
 }
 form{
 
-  padding:20px;
+  padding:0px;
 
-  zoom:2.0;
+  zoom:1.9;
+}
+
+#calc{
+	
+	background-color:#E6DFDF;
+	width:fit-content;
+	padding:10px 5px;
+	box-shadow:1px 1px 7px #999;
+	margin:10px;
+	border-radius:25px;
 }

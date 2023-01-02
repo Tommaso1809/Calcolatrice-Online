@@ -18,52 +18,60 @@
 
     <h1 style="font-family:'Bebas Neue'; font-size:50px;">Calcolatrice Online</h1>
 
-    <form name="calcolatrice">
+	<div id="calc">
+
+		<form name="calcolatrice">
 
 
-      <input name="schermo" disabled id="monitor">
+		  <input name="schermo" disabled id="monitor">
 
-      <table  >
+		  <table  >
 
-          <tr>
+			  <tr>
 
-            <td><input type="button" value="CE" onclick="cancella()"  class="btn" style="background-color:#8ab4f8"/></td>
-            <td><input type="button"value="R" onclick="reset()" class="btn"/></td>
-            <td><input type="button"  value="+" onclick="stampaAschermo('+')"  class="btn"></td>
-            <td><input type="button"  value="/" onclick="stampaAschermo('/')"  class="btn"></td>
+				<td><input type="button" value="CE" onclick="cancella()"  class="btn"/></td>
+				<td><input type="button"value="R" onclick="reset()" class="btn"/></td>
+				<td><input type="button"  value="+" onclick="stampaAschermo('+')"  class="btn"></td>
+				<td><input type="button"  value="/" onclick="stampaAschermo('/')"  class="btn"></td>
 
-          </tr>
+			  </tr>
 
-          <tr>
+			  <tr>
 
-            <td><input type="button" value="7" onclick="stampaAschermo('7')" class="btn"></td>
-            <td><input type="button" value="8" onclick="stampaAschermo('8')"  class="btn"></td>
-            <td><input type="button" value="9" onclick="stampaAschermo('9')"  class="btn"></td>
-            <td><input type="button" value="-" onclick="stampaAschermo('-')"  class="btn"></td>
-          </tr>
+				<td><input type="button" value="7" onclick="stampaAschermo('7')" class="btn"></td>
+				<td><input type="button" value="8" onclick="stampaAschermo('8')"  class="btn"></td>
+				<td><input type="button" value="9" onclick="stampaAschermo('9')"  class="btn"></td>
+				<td><input type="button" value="-" onclick="stampaAschermo('-')"  class="btn"></td>
+			  </tr>
 
-          <tr>
+			  <tr>
 
-            <td><input type="button" value="4" onclick="stampaAschermo('4')"  class="btn"></td>
-            <td><input type="button" value="5" onclick="stampaAschermo('5')"  class="btn"></td>
-            <td><input type="button" value="6" onclick="stampaAschermo('6')"  class="btn"></td>
-            <td><input type="button" value="x" onclick="stampaAschermo('*')"  class="btn"></td>
-          </tr>
+				<td><input type="button" value="4" onclick="stampaAschermo('4')"  class="btn"></td>
+				<td><input type="button" value="5" onclick="stampaAschermo('5')"  class="btn"></td>
+				<td><input type="button" value="6" onclick="stampaAschermo('6')"  class="btn"></td>
+				<td><input type="button" value="x" onclick="stampaAschermo('*')"  class="btn"></td>
+			  </tr>
 
-          <tr>
-            <td><input type="button"  value=" 1" onclick="stampaAschermo('1')"  class="btn"></td>
-            <td><input type="button"  value=" 2" onclick="stampaAschermo('2')"  class="btn"></td>
-            <td><input type="button" value=" 3" onclick="stampaAschermo('3')"  class="btn"></td>
-            <td><input type="button"  value=" =" onclick="calcola()"  class="btn"></td>
-          </tr>
+			  <tr>
+				<td><input type="button"  value=" 1" onclick="stampaAschermo('1')"  class="btn"></td>
+				<td><input type="button"  value=" 2" onclick="stampaAschermo('2')"  class="btn"></td>
+				<td><input type="button" value=" 3" onclick="stampaAschermo('3')"  class="btn"></td>
+				<td><input type="button"  value=" 0" onclick="stampaAschermo('0')"  class="btn"></td>
+			  </tr>
+			  
+			  <tr>
+			  
+				<td colspan="4"><input type="button"  value=" =" onclick="calcola()"  class="btn" style="background-color:#8ab4f8; width:210px;"></td>
+			  
+			  </tr>
 
 
-      </table>
+		  </table>
 
 
-    </form>
+		</form>
 
-
+	</div>
 
     </center>
 
